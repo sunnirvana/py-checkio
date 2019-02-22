@@ -30,9 +30,24 @@
 # END_DESC
 
 def checkio(expression):
-    return True or False
+    bracket_dict = {
+        ')': '(',
+        ']': '[',
+        '}': '{',
+    }
+    bracket_stack = list()
+    for chr in expression:
+        if chr in bracket_dict.values():
+            bracket_stack.insert(0, chr)
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
+        if chr in bracket_dict.keys():
+            if len(bracket_stack) == 0 or bracket_stack.pop(0) != bracket_dict[chr]:
+                return False
+
+    return len(bracket_stack) == 0
+
+
+# These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
     assert checkio("((5+3)*2+1)") == True, "Simple"
     assert checkio("{[(3+1)+2]+}") == True, "Different types"

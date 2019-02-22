@@ -24,14 +24,32 @@
 # END_DESC
 
 def reverse_roman(roman_string):
+    roman_dict = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000,
+    }
 
-    #replace this for solution
-    return 0
+    # replace this for solution
+    total = 0
+    for i in range(len(roman_string) - 1):
+        if roman_dict[roman_string[i+1]] > roman_dict[roman_string[i]]:
+            sign = -1
+        else:
+            sign = 1
+        total += (sign * roman_dict[roman_string[i]])
+
+    return total + roman_dict[roman_string[-1]]
+
 
 if __name__ == '__main__':
-    #These "asserts" using only for self-checking and not necessary for auto-testing
+    # These "asserts" using only for self-checking and not necessary for auto-testing
     assert reverse_roman('VI') == 6, '6'
     assert reverse_roman('LXXVI') == 76, '76'
     assert reverse_roman('CDXCIX') == 499, '499'
     assert reverse_roman('MMMDCCCLXXXVIII') == 3888, '3888'
-    print('Great! It is time to Check your code!');
+    print('Great! It is time to Check your code!')

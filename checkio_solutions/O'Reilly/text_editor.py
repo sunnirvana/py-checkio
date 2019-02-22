@@ -50,29 +50,22 @@ class Text:
         self.content += content
 
     def restore(self, history):
-        self.content = history[0]
-        self.font = history[1]
+        self.content, self.font = history
 
     def set_font(self, font):
-        self.font = font
+        self.font = f'[{font}]'
 
     def show(self):
         font = ''
-        if self.font != '':
-            font = '[{}]'.format(self.font)
-        return '{font}{text}{font}'.format(text=self.content, font=font)
+        return f'{self.font}{self.content}{self.font}'
 
 
-class SavedText:
-    def __init__(self):
-        self.history = dict()
-        pass
-
-    def save_text(self, editor:Text):
-        self.history[len(self.history)] = (editor.content, editor.font)
+class SavedText(list):
+    def save_text(self, text:Text):
+        self.append((text.content, text.font))
 
     def get_version(self, version):
-        return self.history[version]
+        return self[version]
 
 
 if __name__ == '__main__':

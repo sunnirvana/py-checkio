@@ -16,8 +16,11 @@
 # END_DESC
 
 def checkio(number: int) -> int:
-
-    return 1
+    res = 1
+    for num in str(number):
+        if num != '0':
+            res *= int(num)
+    return res
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':

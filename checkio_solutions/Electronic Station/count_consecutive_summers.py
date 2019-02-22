@@ -19,7 +19,16 @@
 
 def count_consecutive_summers(num):
     # your code here
-    return None
+    count = 1  # itself
+    for i in range(1, num):
+        # even
+        if i % 2 == 0 and (num % i) == (i / 2):
+            count += 1
+        # odd
+        if i % 2 == 1 and (num // i) == 0:
+            count += 1
+
+    return count
 
 
 if __name__ == '__main__':

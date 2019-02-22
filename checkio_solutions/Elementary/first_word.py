@@ -29,24 +29,46 @@
 
 
 
+# def first_word(text: str) -> str:
+#     """
+#         returns the first word in a given text.
+#     """
+#     # your code here
+#     start = None
+#     end = None
+#     for i in range(len(text)):
+#         if 'z' >= text[i] >= 'a' or 'Z' >= text[i] >= 'A':
+#             if start is None:
+#                 start = i
+#
+#         if text[i] in ['.', ',', ' '] and start is not None:
+#             end = i
+#             break
+#     #  print('return first workd, ', text[start:end])
+#     return text[start:end]
+#     #  return text[0:2]
+
+import string
+
+
 def first_word(text: str) -> str:
     """
         returns the first word in a given text.
     """
-    # your code here
-    start = None
-    end = None
-    for i in range(len(text)):
-        if 'z' >= text[i] >= 'a' or 'Z' >= text[i] >= 'A':
-            if start is None:
-                start = i
-
-        if text[i] in ['.', ',', ' '] and start is not None:
-            end = i
+    apostrophe = '\''
+    res = ''
+    for chr in text:
+        if chr in string.ascii_letters + apostrophe:
+            res += chr
+        elif len(res) > 0:
             break
-    #  print('return first workd, ', text[start:end])
-    return text[start:end]
-    #  return text[0:2]
+
+    res_end = text.find(res) + len(res)
+    if text[res_end:res_end+6:] == '......':
+        res += '......'
+
+    print(text[res_end:res_end+6:], res)
+    return res
 
 
 if __name__ == '__main__':
@@ -61,4 +83,5 @@ if __name__ == '__main__':
     assert first_word("... and so on ...") == "and"
     assert first_word("hi") == "hi"
     assert first_word("Hello.World") == "Hello"
+    assert first_word(",  and...... How about you") == "and......"
     print("Coding complete? Click 'Check' to earn cool rewards!")

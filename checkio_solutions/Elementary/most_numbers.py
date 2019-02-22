@@ -21,13 +21,15 @@
 # END_DESC
 
 def checkio(*args):
-    return 0
+    return max(args) - min(args) if len(args) > 0 else 0
 
-#These "asserts" using only for self-checking and not necessary for auto-testing
+
+# These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
     def almost_equal(checked, correct, significant_digits):
         precision = 0.1 ** significant_digits
         return correct - precision < checked < correct + precision
+
 
     assert almost_equal(checkio(1, 2, 3), 2, 3), "3-1=2"
     assert almost_equal(checkio(5, -5), 10, 3), "5-(-5)=10"
