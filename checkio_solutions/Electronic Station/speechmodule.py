@@ -25,12 +25,43 @@ HUNDRED = "hundred"
 
 
 def checkio(number):
+    hundreds = number // 100
+    tens = (number % 100) // 10
+    ones = number % 10
 
-    #replace this for solution
-    return 'string representation of n'
+    res = list()
+    if hundreds > 0:
+        res.append(FIRST_TEN[hundreds - 1])
+        res.append(HUNDRED)
+
+    # tens > 1, ones == 0, e.g. 30
+    # tens == 1, ones >= 0, e.g. 18
+    # tens > 1, ones > 1, e.g. 23
+
+    if tens > 1 and ones == 0:
+        # 30
+        res.append(OTHER_TENS[tens - 2])
+
+    if tens == 1 and ones >= 0:
+        # 18
+        res.append(SECOND_TEN[ones])
+
+    if tens > 1 and ones >= 1:
+        # 41
+        res.append(OTHER_TENS[tens - 2])
+        res.append(FIRST_TEN[ones - 1])
+
+    if tens == 0 and ones > 0:
+        # 2
+        res.append(FIRST_TEN[ones - 1])
+
+    # print(number, hundreds, tens, ones, res)
+
+    return ' '.join(res)
+
 
 if __name__ == '__main__':
-    #These "asserts" using only for self-checking and not necessary for auto-testing
+    # These "asserts" using only for self-checking and not necessary for auto-testing
     assert checkio(4) == 'four', "1st example"
     assert checkio(133) == 'one hundred thirty three', "2nd example"
     assert checkio(12) == 'twelve', "3rd example"

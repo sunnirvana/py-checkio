@@ -21,11 +21,31 @@
 # END_DESC
 
 def checkio(number):
-    #replace this for solution
-    return 0
+    # replace this for solution
+    digit_list = []
+    _number = number
+    while True:
+        found = False
+        for digit in reversed(range(2, 10)):
+            if _number % digit == 0:
+                digit_list.append(str(digit))
+                _number = _number // digit
+                found = True
+                break
+
+        if found is False:
+            if _number > 9:
+                digit_list.clear()
+            break
+
+    res_str = ''.join(sorted(digit_list)) if len(digit_list) > 0 else '0'
+    # print(number, digit_list, res_str)
+
+    return int(res_str)
+
 
 if __name__ == '__main__':
-    #These "asserts" using only for self-checking and not necessary for auto-testing
+    # These "asserts" using only for self-checking and not necessary for auto-testing
     assert checkio(20) == 45, "1st example"
     assert checkio(21) == 37, "2nd example"
     assert checkio(17) == 0, "3rd example"

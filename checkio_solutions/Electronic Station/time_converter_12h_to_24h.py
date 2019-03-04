@@ -20,14 +20,29 @@
 # END_DESC
 
 def time_converter(time):
-    #replace this for solution
-    return time
+    # replace this for solution
+    _time = time.split()[0]
+    hour = int(_time.split(':')[0])
+    minute = int(_time.split(':')[1])
+
+    format = time.split()[1]
+
+    out = '{:02d}:{:02d}'
+
+    if format == 'a.m.':
+        hour = 0 if hour == 12 else hour
+        return out.format(hour, minute)
+    else:
+        hour = hour if hour == 12 or hour == 0 else hour + 12
+        return out.format(hour, minute)
+
 
 if __name__ == '__main__':
     print("Example:")
     print(time_converter('12:30 p.m.'))
+    print(time_converter('9:00 a.m.'))
 
-    #These "asserts" using only for self-checking and not necessary for auto-testing
+    # These "asserts" using only for self-checking and not necessary for auto-testing
     assert time_converter('12:30 p.m.') == '12:30'
     assert time_converter('9:00 a.m.') == '09:00'
     assert time_converter('11:15 p.m.') == '23:15'

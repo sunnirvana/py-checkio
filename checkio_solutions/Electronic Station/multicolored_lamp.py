@@ -29,8 +29,15 @@
 # 
 # END_DESC
 
+from itertools import cycle
+
 class Lamp:
-    pass
+    colors = ['Green', 'Red', 'Blue', 'Yellow']
+    def __init__(self):
+        self._colors = cycle(self.colors)
+
+    def light(self):
+        return next(self._colors)
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing

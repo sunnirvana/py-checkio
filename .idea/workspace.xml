@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d39d39f8-58e3-4ab3-a1d8-fef4a17bd5f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkio_solutions/Electronic Station/multicolored_lamp.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkio_solutions/Electronic Station/multicolored_lamp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkio_solutions/Electronic Station/number_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkio_solutions/Electronic Station/number_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkio_solutions/Electronic Station/probably_dice.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkio_solutions/Electronic Station/probably_dice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkio_solutions/Electronic Station/roman_numerals.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkio_solutions/Electronic Station/roman_numerals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkio_solutions/Electronic Station/speechmodule.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkio_solutions/Electronic Station/speechmodule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkio_solutions/Electronic Station/the_longest_palindromic.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkio_solutions/Electronic Station/the_longest_palindromic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkio_solutions/Electronic Station/time_converter_12h_to_24h.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkio_solutions/Electronic Station/time_converter_12h_to_24h.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +29,35 @@
     <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
     <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/checkio_solutions/Electronic Station/probably_dice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkio_solutions/Electronic Station/reverse_roman_numerals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-444" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkio_solutions/Electronic Station/roman_numerals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -54,6 +92,8 @@
         <option value="$PROJECT_DIR$/checkio_solutions/O'Reilly/text_editor.py" />
         <option value="$PROJECT_DIR$/checkio_solutions/O'Reilly/worth_of_words.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/checkio_solutions/Electronic Station/probably_dice.py" />
+        <option value="$PROJECT_DIR$/checkio_solutions/Electronic Station/roman_numerals.py" />
       </list>
     </option>
   </component>
@@ -81,6 +121,12 @@
               <item name="checkio" type="462c0819:PsiDirectoryNode" />
               <item name="checkio_solutions" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="checkio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="checkio" type="462c0819:PsiDirectoryNode" />
+              <item name="checkio_solutions" type="462c0819:PsiDirectoryNode" />
+              <item name="Electronic Station" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -103,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.text_editor">
+  <component name="RunManager" selected="Python.probably_dice">
     <configuration name="ground_for_the_house" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="checkio" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +171,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="non_unique_elements" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="probably_dice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="checkio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,11 +179,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/checkio_solutions/Home" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/checkio_solutions/Electronic Station" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/checkio_solutions/Home/non_unique_elements.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/checkio_solutions/Electronic Station/probably_dice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -211,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.probably_dice" />
         <item itemvalue="Python.text_editor" />
         <item itemvalue="Python.ground_for_the_house" />
         <item itemvalue="Python.the_warriors" />
         <item itemvalue="Python.x_o_referee" />
-        <item itemvalue="Python.non_unique_elements" />
       </list>
     </recent_temporary>
   </component>
@@ -234,21 +280,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1797619" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18324292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295238" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6180952" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34761906" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.44285715" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.24176955" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -528,8 +575,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkio_solutions/Electronic Station/number_factory.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkio_solutions/Electronic Station/reverse_roman_numerals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-444" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkio_solutions/Electronic Station/roman_numerals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkio_solutions/Electronic Station/probably_dice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
